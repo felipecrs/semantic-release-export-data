@@ -7,10 +7,10 @@
 [![ci](https://github.com/felipecrs/semantic-release-export-data/workflows/ci/badge.svg)](https://github.com/felipecrs/semantic-release-export-data/actions?query=workflow%3Aci)
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-| Step               | Description                                                                                                                                                                                                                              |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `verifyConditions` | Set `new-release-published` as `false` (will be set later as `true` if a new release is published)|
-| `generateNotes` | If a new release is published, this will set `new-release-published` as `true` and other variables|
+| Step               | Description                                                                                        |
+| ------------------ | -------------------------------------------------------------------------------------------------- |
+| `verifyConditions` | Set `new-release-published` as `false` (will be set later as `true` if a new release is published) |
+| `generateNotes`    | If a new release is published, this will set `new-release-published` as `true` and other variables |
 
 ## Install
 
@@ -30,9 +30,7 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
 
 ```json
 {
-  "plugins": [
-    "semantic-release-export-data"
-  ]
+  "plugins": ["semantic-release-export-data"]
 }
 ```
 
@@ -40,10 +38,10 @@ The plugin can be configured in the [**semantic-release** configuration file](ht
 
 Currently, the plugin exports the following GitHub Actions's outputs:
 
-| Output               | Description                                                                                                                                                                                                                              |
-|--------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `new-release-published` | Whether a new release was published. The return value is in the form of a string. (`true` or `false`)|
-| `new-release-version` | If a new release was published, the version of the new release. (e.g. `1.3.0`)|
+| Output                  | Description                                                                                           |
+| ----------------------- | ----------------------------------------------------------------------------------------------------- |
+| `new-release-published` | Whether a new release was published. The return value is in the form of a string. (`true` or `false`) |
+| `new-release-version`   | If a new release was published, the version of the new release. (e.g. `1.3.0`)                        |
 
 ### GitHub Actions Example
 
