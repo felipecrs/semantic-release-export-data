@@ -97,4 +97,4 @@ Because of https://github.com/felipecrs/semantic-release-vsce/issues/189#issueco
 
 ## Thanks
 
-Inspired by the awesome [semantic-release-action](https://github.com/cycjimmy/semantic-release-action) by @cycjimmy.
+Inspired by the awesome [semantic-release-action](https://github.com/cycjimmy/semantic-release-action) by @cycjimmy, although this provides the ability of running `semantic-release` in `--dry-run` mode, so you don't have to cut a release unless everything else is done.
