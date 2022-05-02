@@ -19,6 +19,7 @@ jobs:
       - uses: volta-cli/action@v1
       - run: npm ci
       - run: npx semantic-release --dry-run
+        id: get-next-version
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
