@@ -1,0 +1,21 @@
+{
+  "name": "semantic-release-export-data",
+  "version": "0.0.0-development",
+  "description": "semantic-release plugin to export variables like the next release version",
+  "main": "index.js",
+  "files": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/felipecrs/semantic-release-export-data.git",
+  "bugs": "https://github.com/felipecrs/semantic-release-export-data/issues",
+  "homepage": "https://github.com/felipecrs/semantic-release-export-data#readme",
+  "author": "Felipe Santos <felipecassiors@gmail.com>",
+  "peerDependencies": {
+    "semantic-release": ">=18"
+  },
+  "devDependencies": {
+    "semantic-release": "^19.0.2"
+  }
+}
