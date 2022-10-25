@@ -16,7 +16,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v1
+        with:
+          fetch-depth: 0
+      - uses: volta-cli/action@v4
       - run: npm ci
       - run: npx semantic-release --dry-run
         id: get-next-version
@@ -37,7 +39,9 @@ jobs:
     steps:
       - run: echo "The new release version is ${{ needs.get-next-version.outputs.new-release-version }}"
       - uses: actions/checkout@v3
-      - uses: volta-cli/action@v1
+        with:
+          fetch-depth: 0
+      - uses: volta-cli/action@v4
       - run: npm ci
       - run: npx semantic-release
         env:
