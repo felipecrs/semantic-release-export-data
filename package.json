@@ -27,5 +27,12 @@
       "@semantic-release/npm",
       "@semantic-release/github"
     ]
+  },
+  "dependencies": {
+    "@actions/core": "^1.10.0"
+  },
+  "volta": {
+    "node": "16.18.0",
+    "npm": "8.19.2"
   }
 }
