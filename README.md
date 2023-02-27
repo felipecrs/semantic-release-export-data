@@ -62,7 +62,7 @@ jobs:
           node-version: 16
       - run: npm ci
       - run: npx semantic-release --dry-run
-        id: get-next-version
+        id: get-next-version 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     outputs:
