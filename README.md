@@ -68,6 +68,7 @@ jobs:
     outputs:
       new-release-published: ${{ steps.get-next-version.outputs.new-release-published }}
       new-release-version: ${{ steps.get-next-version.outputs.new-release-version }}
+      new-release-git-tag: ${{ steps.get-next-version.outputs.new-release-git-tag }}
 
   build:
     runs-on: ubuntu-latest
@@ -76,6 +77,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: echo "The new release version is ${{ needs.get-next-version.outputs.new-release-version }}"
+      - run: echo "The new release git tag is ${{ needs.get-next-version.outputs.new-release-git-tag }}"
+
 
   release:
     runs-on: ubuntu-latest
