@@ -71,7 +71,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    needs: next-version
+    needs: get-next-version
     if: needs.get-next-version.outputs.new-release-published == 'true'
     steps:
       - uses: actions/checkout@v3
