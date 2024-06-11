@@ -9,6 +9,7 @@ function verifyConditions() {
 function generateNotes(_pluginConfig, { nextRelease }) {
   core.setOutput("new-release-published", "true");
   core.setOutput("new-release-version", nextRelease.version);
+  core.setOutput("new-release-git-tag", nextRelease.gitTag);
 }
 
 module.exports = {
