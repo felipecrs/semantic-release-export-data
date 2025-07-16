@@ -29,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "@actions/core": "^1.10.0"
+    "@actions/core": "^1.11.1"
   },
   "volta": {
     "node": "16.18.0",
