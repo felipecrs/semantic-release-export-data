@@ -43,6 +43,7 @@ Currently, the plugin exports the following GitHub Actions's outputs:
 | `new-release-published` | Whether a new release was published. The return value is in the form of a string. (`true` or `false`) |
 | `new-release-version`   | If a new release was published, the version of the new release. (e.g. `1.3.0`)                        |
 | `new-release-git-tag`   | If a new version was published, the git tag of the new release. (e.g. `v1.3.0`)                       |
+| `new-release-notes`     | If a new version was published, the generated notes (if present)                                      |
 
 ### GitHub Actions Example
 
