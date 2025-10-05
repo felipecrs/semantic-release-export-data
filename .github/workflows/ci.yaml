@@ -30,6 +30,7 @@ jobs:
       new-release-published: ${{ steps.get-next-version.outputs.new-release-published }}
       new-release-version: ${{ steps.get-next-version.outputs.new-release-version }}
       new-release-git-tag: ${{ steps.get-next-version.outputs.new-release-git-tag }}
+      new-release-notes: ${{ steps.get-next-version.outputs.new-release-notes }}
 
   release:
     runs-on: ubuntu-latest
@@ -39,6 +40,11 @@ jobs:
 
     steps:
       - run: echo "The new release version is ${{ needs.get-next-version.outputs.new-release-version }} with tag ${{ needs.get-next-version.outputs.new-release-git-tag }}"
+      - run: |
+          cat << 'EOF'
+          The release notes are:
+          ${{ needs.get-next-version.outputs.new-release-notes }}
+          EOF
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
