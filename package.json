@@ -2,8 +2,11 @@
   "name": "semantic-release-export-data",
   "version": "0.0.0-development",
   "description": "semantic-release plugin to export variables like the next release version",
-  "main": "index.js",
-  "files": [],
+  "type": "module",
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,11 +16,10 @@
   "homepage": "https://github.com/felipecrs/semantic-release-export-data#readme",
   "author": "Felipe Santos <felipecassiors@gmail.com>",
   "peerDependencies": {
-    "semantic-release": ">=18"
+    "semantic-release": ">=20"
   },
   "devDependencies": {
-    "semantic-release": "^19.0.2",
-    "semantic-release-export-data": "."
+    "semantic-release": "^24.2.9"
   },
   "release": {
     "plugins": [
@@ -29,7 +31,7 @@
     ]
   },
   "volta": {
-    "node": "16.18.0",
-    "npm": "8.19.2"
+    "node": "22.20.0",
+    "npm": "11.6.1"
   }
 }
