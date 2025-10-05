@@ -24,7 +24,7 @@ function generateNotes(_pluginConfig, { nextRelease }) {
   exportData("new-release-version", nextRelease.version);
   exportData("new-release-git-tag", nextRelease.gitTag);
   // Export notes if present
-  nextRelease.notes && exportData("new-release-release-notes", nextRelease.notes);
+  nextRelease.notes && exportData("new-release-notes", nextRelease.notes);
 }
 
 module.exports = {
