@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: volta-cli/action@v4
@@ -45,7 +45,7 @@ jobs:
           The release notes are:
           ${{ needs.get-next-version.outputs.new-release-notes }}
           EOF
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: volta-cli/action@v4
